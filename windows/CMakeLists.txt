@@ -1,5 +1,7 @@
 # Project-level configuration.
-cmake_minimum_required(VERSION 3.14)
+# Require at least 3.14 but indicate the project has been updated to work
+# with policies introduced by CMake 3.25 or earlier.
+cmake_minimum_required(VERSION 3.14...4.25)
 project(movie_app LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
@@ -7,8 +9,9 @@ project(movie_app LANGUAGES CXX)
 set(BINARY_NAME "movie_app")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
-# versions of CMake.
-cmake_policy(VERSION 3.14...3.25)
+# versions of CMake. The min...max above already documents the policy range
+# the project has been updated for, so an explicit cmake_policy(VERSION ...)
+# line is no longer required here.
 
 # Define build configuration option.
 get_property(IS_MULTICONFIG GLOBAL PROPERTY GENERATOR_IS_MULTI_CONFIG)
