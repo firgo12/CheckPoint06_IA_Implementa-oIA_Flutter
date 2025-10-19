@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "265565038727",
+    "project_id": "checkpoint-ia",
+    "storage_bucket": "checkpoint-ia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265565038727:android:ce56167e875d4f62e7f022",
+        "android_client_info": {
+          "package_name": "com.example.movie_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjFDb7FxOl3pdKs2_YIb15bF0lvqvmO7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
